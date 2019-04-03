@@ -12,16 +12,10 @@ function handleSubmit() {
       // console.log(data);
       Object.keys(data).forEach(function(results) { 
         var arr = data[results].pages;
-        // console.log(arr);
       for (var i in arr) {
         document.getElementById("results").innerHTML += arr[i].title + ', ';
-        // console.log(arr[i].title);
-        
-    }
 
-    
-        //will print the array belongs to each property.
-
+          }
       });
     }
   };
