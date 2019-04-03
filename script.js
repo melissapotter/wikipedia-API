@@ -10,12 +10,12 @@ function handleSubmit() {
     if (xhttp.status >= 200 && xhttp.status < 300) {
       var data = JSON.parse(xhttp.responseText);
       // console.log(data);
-      Object.keys(data).forEach(function(results) {
+      Object.keys(data).forEach(function(results) { 
         var arr = data[results].pages;
         // console.log(arr);
       for (var i in arr) {
-        document.getElementById("results").innerHTML = (arr[i].title);
-        console.log(arr[i].title);
+        document.getElementById("results").innerHTML += arr[i].title + ', ';
+        // console.log(arr[i].title);
         
     }
 
