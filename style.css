@@ -1,3 +1,6 @@
+body {
+    background-color: #FFF;
+}
 #title { font-weight: bold;
         color: black;
         text-align: center;
